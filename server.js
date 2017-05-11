@@ -11,10 +11,10 @@ app.listen(port);
 
 app.get('/', function(req, res){
     res.sendFile(path.join(__dirname + '/index.html'));
-})
+});
 app.get('/dist/build.js', function(req, res){
     res.sendFile(path.join(__dirname + '/dist/build.js'));
 });
-app.post('/getlinks', getlinks.httpResponse)
+app.post('/getlinks', getlinks.httpResponse);
 
 console.log('Cory Martin\'s Frontend Emma project started on port ' + port);
